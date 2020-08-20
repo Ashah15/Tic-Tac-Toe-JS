@@ -34,7 +34,8 @@
   font-size: 20px;
 }
 
-.start-btn, .reset-btn {
+.start-btn,
+.reset-btn {
   width: 100px;
   font-weight: bold;
   text-align: center;
@@ -46,7 +47,8 @@
   transition: all 0.4s ease-out;
 }
 
-.start-btn:hover, .reset-btn:hover {
+.start-btn:hover,
+.reset-btn:hover {
   background-color: #555;
   color: #eee;
 }
