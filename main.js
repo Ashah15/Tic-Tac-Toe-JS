@@ -104,3 +104,101 @@ const playerFactory = (playerName, playerSymbol) => {
     };
 };
 
+const game = (() => {
+	const player1 = playerFactory('One', 'X');
+	const player2 = playerFactory('Two', 'O');
+	const boxes = document.querySelectorAll('.grid-item');
+	const startBtn = document.querySelector('.start-btn');
+	const resetBtn = document.querySelector('.reset-btn');
+	let currentPlayer = player1;
+	let symbol = currentPlayer.getSymbol();
+
+	const toggleCurrentPlayer = () => {
+		currentPlayer == player1 ? (currentPlayer = player2) : (currentPlayer = player1);
+		symbol = currentPlayer.getSymbol();
+	};
+
+	const makeAMove = (e) => {
+		const index = parseInt(e.target.id);
+		let board = gameBoard.getBoard();
+		console.log('in the method');
+		if (logic.checkMove(index, board)) {
+			currentPlayer.addMove(index + 1);
+			UI.updateBox(index, symbol);
+			gameBoard.updateBoard(index, symbol);
+			console.log('good check');
+			return true;
+		} else {
+			UI.showInvalidMoveMessage();
+			console.log('bad check');
+			return false;
+		}
+	};
+
+	const handleClick = (e) => {
+		if (makeAMove(e)) {
+			let moves = currentPlayer.getPlayerMoves();
+			let board = gameBoard.getBoard();
+
+			if (logic.checkWin(moves)) {
+				UI.showEndMessage('Win', currentPlayer.getName());
+				stop();
+			} else if (logic.checkTie(board)) {
+				UI.showEndMessage('Tie', currentPlayer.getName());
+				stop();
+			} else {
+				toggleCurrentPlayer();
+				UI.showPlayerTurnMessage(currentPlayer.getName());
+			}
+		}
+	};
+
+	const stop = () => {
+		boxes.forEach((box) => {
+			box.classList.add('disabled');
+		});
+		startBtn.classList.toggle('disabled');
+		resetBtn.classList.add('disabled');
+	};
+
+	const reset = () => {
+		gameBoard.resetBoard();
+		UI.resetDOM();
+		player1.resetPlayerMoves();
+		player2.resetPlayerMoves();
+		boxes.forEach((box) => {
+			box.classList.remove('disabled');
+			box.removeEventListener('click', handleClick);
+		});
+	};
+
+	const start = () => {
+		reset();
+		UI.showWelcomeMessage();
+		setTimeout(() => {
+			UI.showPlayerTurnMessage(currentPlayer.getName());
+		}, 2000);
+
+		startBtn.classList.toggle('disabled');
+		resetBtn.classList.remove('disabled');
+
+		boxes.forEach((box) => {
+			box.addEventListener('click', handleClick);
+		});
+	};
+
+	return {
+		start,
+		reset,
+	};
+})();
+
+window.onload = () => {
+	const startBtn = document.querySelector('.start-btn');
+	const resetBtn = document.querySelector('.reset-btn');
+	startBtn.addEventListener('click', game.start);
+	resetBtn.addEventListener('click', () => {
+		game.reset();
+		game.start();
+	});
+};
