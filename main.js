@@ -179,7 +179,7 @@ const game = (() => {
 			UI.showPlayerTurnMessage(currentPlayer.getName());
 		}, 2000);
 
-		startBtn.classList.toggle('disabled');
+		startBtn.classList.add('disabled');
 		resetBtn.classList.remove('disabled');
 
 		boxes.forEach((box) => {
