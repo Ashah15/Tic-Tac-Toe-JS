@@ -1,59 +1,42 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Tic-Tac-Toe-JS
 
 > One paragraph statement about the project.
 
-![screenshot](./app_screenshot.png)
+![game](https://user-images.githubusercontent.com/25789605/90823146-2a935e80-e33e-11ea-9b0e-5d521cb05608.png)
 
 Additional description about the project and its features.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- Javascript,
+- HTML,
+- CSS
 
 ## Live Demo
 
 [Live Demo Link](https://livedemo.com)
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
 ### Setup
+Clone or download the repository to your local machine.
 
 ### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+None required
 
 ## Authors
 
-👤 **Author1**
+👤 Asha Abdullahi
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@Ashah15](https://github.com/Ashah15)
+- Twitter: [@AshaAbdullahi13](https://twitter.com/AshaAbdullahi13)
+- Linkedin: [Asha Abdullahi](https://www.linkedin.com/in/ashaabdullahi/)
 
-👤 **Author2**
+👤 Julian Blasco
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@Blasco9](https://github.com/Blasco9 )
+- Twitter: [@julianblasco9](https://twitter.com/julianblasco9)
+- Linkedin: [Julian Blasco](https://www.linkedin.com/in/julian-blasco/ )
 
 ## 🤝 Contributing
 
