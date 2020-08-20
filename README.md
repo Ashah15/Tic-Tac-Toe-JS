@@ -1,10 +1,10 @@
 # Tic-Tac-Toe-JS
 
-> One paragraph statement about the project.
+> Traditional Tic Tac Toe game
 
-![game](https://user-images.githubusercontent.com/25789605/90823146-2a935e80-e33e-11ea-9b0e-5d521cb05608.png)
+![game](Screenshot.bmp)
 
-Additional description about the project and its features.
+The purpose of building this project was to learn about factory functions and the module pattern
 
 ## Built With
 
