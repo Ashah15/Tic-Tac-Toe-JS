@@ -217,6 +217,7 @@ const game = (() => {
 })();
 
 window.onload = () => {
+  const modal = document.querySelector('.modal');
   const startBtn = document.querySelector('.start-btn');
   const resetBtn = document.querySelector('.reset-btn');
   startBtn.addEventListener('click', game.start);
