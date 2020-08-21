@@ -1,3 +1,16 @@
+const Players = () => {
+  const playerOne = document.getElementById('player-one-input').value;
+  const playerTwo = document.getElementById('player-two-input').value;
+  playersArray.push(playerOne);
+  playersArray.push(playerTwo);
+  if (playerOne && playerTwo) {
+    document.querySelector('.players-form').classList.add('hide-players');
+    document.querySelector('.general-section').classList.remove('hide-section');
+    document.querySelector('.first-player-name').innerHTML = playerOne;
+    document.querySelector('.second-player-name').innerHTML = playerTwo;
+  }
+};
+
 const gameBoard = (() => {
   let board = new Array(9).fill(null);
 
