@@ -9,13 +9,13 @@
 	</head>
 	<body>
         <section class="general-section hide-section">
-            <div class="board-name d-flex">
+             <div class="board-name d-flex">
               <div class="first-player-name"></div>
                   <div class="versus">
                     VS
                   </div>
                   <div class="second-player-name"></div>
-            </div>
+            </div> 
 		<div class="container">
 			<div class="system-message"></div>
 			<div class="grid">
@@ -30,8 +30,10 @@
 				<div id="8" class="grid-item"></div>
 			</div>
         </div>
+         <div class="start-btn">START</div>
+         <div class="reset-btn disabled">RESET</div>
     </section>
-    <div class="modal">
+    <div class="modal-players hide-players">
         <form class="players-form p-5">
     <label for="playerOne">
       Player One
@@ -44,9 +46,6 @@
     <button id="add-players-btn" class="btn btn-primary mt-4">Add Player</button>
     </form>
   </div>
-
-    <div class="start-btn">START</div>
-    <div class="reset-btn disabled">RESET</div>
 </body>
     <script defer src="main.js"></script>
 </html>

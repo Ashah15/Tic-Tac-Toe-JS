@@ -1,14 +1,17 @@
+//let playersArray = [];
 const Players = () => {
   const playerOne = document.getElementById('player-one-input').value;
   const playerTwo = document.getElementById('player-two-input').value;
   playersArray.push(playerOne);
   playersArray.push(playerTwo);
+  // console.log(playerOne,playerTwo)
   if (playerOne && playerTwo) {
     document.querySelector('.players-form').classList.add('hide-players');
     document.querySelector('.general-section').classList.remove('hide-section');
     document.querySelector('.first-player-name').innerHTML = playerOne;
     document.querySelector('.second-player-name').innerHTML = playerTwo;
   }
+  console.log(playersArray)
 };
 
 const gameBoard = (() => {
@@ -220,6 +223,7 @@ window.onload = () => {
   const modal = document.querySelector('.modal');
   const startBtn = document.querySelector('.start-btn');
   const resetBtn = document.querySelector('.reset-btn');
+  document.getElementById('add-players-btn').addEventListener('click', Players);
   startBtn.addEventListener('click', game.start);
   resetBtn.addEventListener('click', () => {
     game.reset();
