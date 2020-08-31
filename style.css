@@ -34,11 +34,15 @@
   font-size: 20px;
 }
 
-/*.hide-section {
+.hide-section {
+  display: none;
+}
+
+/*.modal-players {
   display: none;
 }*/
 
-/*.modal {
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -48,7 +52,7 @@
     height: 100%;
     overflow: hidden;
     outline: 0;
-}*/
+}
 
 .first-player-name { 
   border: 2px solid #808080; 
