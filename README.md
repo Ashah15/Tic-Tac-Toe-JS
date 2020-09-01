@@ -2,7 +2,7 @@
 
 > Traditional Tic Tac Toe game
 
-![game](Screenshot.bmp)
+![tic](https://user-images.githubusercontent.com/25789605/91907161-fdd23600-ecb1-11ea-98b1-1eb56a9ab67c.png)
 
 The purpose of building this project was to learn about factory functions and the module pattern
 
