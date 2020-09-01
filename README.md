@@ -14,10 +14,11 @@ The purpose of building this project was to learn about factory functions and th
 
 ## Live Demo
 
-[Live Demo Link](https://ashah15.github.io/Tic-Tac-Toe-JS/.)
+[Live Demo Link](https://rawcdn.githack.com/Ashah15/Tic-Tac-Toe-JS/b05d4cb8768308962107d7735c6e621d2e385e6c/index.html)
 
 ### Setup
 Clone or download the repository to your local machine.
+Require one to press start button to start game.
 
 ### Install
 None required
