@@ -1,6 +1,5 @@
-let playersArray = [];
+const playersArray = [];
 const Players = (e) => {
-
   const playerOne = document.getElementById('player-one-input').value;
   const playerTwo = document.getElementById('player-two-input').value;
   playersArray.push(playerOne);
@@ -20,7 +19,6 @@ const Players = (e) => {
   // This is the second way of preventing the issue, it will cancel the submit event of
   // the form
   return false;
-
 };
 
 const gameBoard = (() => {
@@ -241,7 +239,7 @@ const game = (() => {
 })();
 
 window.onload = () => {
-  const modal = document.querySelector('.modal');
+  // const modal = document.querySelector('.modal');
   const startBtn = document.querySelector('.start-btn');
   const resetBtn = document.querySelector('.reset-btn');
 
