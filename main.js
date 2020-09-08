@@ -1,11 +1,19 @@
-import domContent from './dom'
-import logicContent from './logic'
+// import domContent from './dom'
+// import logicContent from './logic'
 
 let domContentInstance = domContent()
 domContentInstance.UI()
 
 let logicContentInstance = logicContent()
 logicContentInstance.logic()
+
+let domContent = [];
+let gameBoard = [];
+const playersArray = [];
+let playerOneMoves = [];
+let playerTwoMoves = [];
+let newArr = [];
+
 
 domContent.updateBox()
 domContent.showWelcomeMessage()
@@ -24,10 +32,3 @@ logicContent.logic()
 logicContent.playerFactory()
 logicContent.game()
 
-
-
-let gameBoard = [];
-const playersArray = [];
-let playerOneMoves = [];
-let playerTwoMoves = [];
-let newArr = [];

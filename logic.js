@@ -1,5 +1,5 @@
 const logicContent = () => {
-	
+
   const Players = (e) => {
   playersArray.push(playerOne);
   playersArray.push(playerTwo);
@@ -182,4 +182,6 @@ const logicContent = () => {
     reset,
   };
  })();
-}  
+
+} 
+ 

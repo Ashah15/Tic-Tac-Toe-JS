@@ -83,4 +83,7 @@ const domContent = () => {
 
  return {buttons, window.onload}
 
+
+$(domContent).ready(function () {
+    initBoard()
 };
