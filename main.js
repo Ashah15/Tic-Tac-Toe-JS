@@ -165,7 +165,7 @@ const playerFactory = (playerName, playerSymbol) => {
     playerMoves = [];
   };
 
-   return {
+  return {
     getName,
     getSymbol,
     getPlayerMoves,
