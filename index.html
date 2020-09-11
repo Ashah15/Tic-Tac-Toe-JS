@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="general-section hide-section">
+    <div class="board-name d-flex">
+      <div class="first-player-name" id="players-name">playerOne</div>
+      <div class="versus">
+        VS
+      </div>
+      <div class="second-player-name" id="players">playerTwo</div>
+    </div>
+    <div class="container">
+      <div class="system-message"></div>
+      <div class="grid">
+        <div id="0" class="grid-item"></div>
+        <div id="1" class="grid-item"></div>
+        <div id="2" class="grid-item"></div>
+        <div id="3" class="grid-item"></div>
+        <div id="4" class="grid-item"></div>
+        <div id="5" class="grid-item"></div>
+        <div id="6" class="grid-item"></div>
+        <div id="7" class="grid-item"></div>
+        <div id="8" class="grid-item"></div>
+      </div>
+    </div>
+    <div class="start-btn">START</div>
+    <div class="reset-btn disabled">RESET</div>
+  </section>
+  <div class="modal-players">
+    <!-- The fourth way is to set form action="#" -->
+    <form action="#" class="players-form p-5">
+      <label for="playerOne">
+        Player One
+      </label>
+      <input type="text" class="form-control" id="player-one-input">
+      <label for="playerTwo">
+        Player Two
+      </label>
+      <input type="text" class="form-control" id="player-two-input">
+      <!--The third way of preventing the issue is to set type="button". Since this is a button by default it submit the data as GET request -->
+      <button type="button" id="add-players-btn" class="btn btn-primary mt-4">Add Player</button>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script defer src="./main.js"></script>
+</body>
+
+</html>

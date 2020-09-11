@@ -1,59 +1,41 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Tic-Tac-Toe-JS
 
-# Project Name
+> Traditional Tic Tac Toe game
 
-> One paragraph statement about the project.
+![tic](https://user-images.githubusercontent.com/25789605/91907161-fdd23600-ecb1-11ea-98b1-1eb56a9ab67c.png)
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+The purpose of building this project was to learn about factory functions and the module pattern
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- Javascript,
+- HTML,
+- CSS
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
+[Live Demo Link](https://rawcdn.githack.com/Ashah15/Tic-Tac-Toe-JS/b05d4cb8768308962107d7735c6e621d2e385e6c/index.html)
 
 ### Setup
+Clone or download the repository to your local machine.
+Require one to press start button to start game.
 
 ### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+None required
 
 ## Authors
 
-👤 **Author1**
+👤 Asha Abdullahi
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@Ashah15](https://github.com/Ashah15)
+- Twitter: [@AshaAbdullahi13](https://twitter.com/AshaAbdullahi13)
+- Linkedin: [Asha Abdullahi](https://www.linkedin.com/in/ashaabdullahi/)
 
-👤 **Author2**
+👤 Julian Blasco
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@Blasco9](https://github.com/Blasco9 )
+- Twitter: [@julianblasco9](https://twitter.com/julianblasco9)
+- Linkedin: [Julian Blasco](https://www.linkedin.com/in/julian-blasco/ )
 
 ## 🤝 Contributing
 
