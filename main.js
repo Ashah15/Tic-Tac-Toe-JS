@@ -249,3 +249,5 @@ window.onload = () => {
     game.start();
   });
 };
+
+module.exports = { Players };
