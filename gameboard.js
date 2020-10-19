@@ -18,4 +18,4 @@ const gameBoard = (() => {
   };
 })();
 
-module.exports = gameBoard;
+module.exports = { gameBoard };

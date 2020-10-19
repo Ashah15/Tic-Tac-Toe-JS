@@ -17,4 +17,4 @@ const Players = (e) => {
   return false;
 };
 
-module.exports = Players;
+module.exports = { Players };

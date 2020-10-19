@@ -1,5 +1,5 @@
-jest.mock('../main');
-const { Players } = require('../main');
+jest.mock('../players');
+const { Players } = require('../players');
 
 describe('Players', () => {
   it('returns true when names are valid', () => {

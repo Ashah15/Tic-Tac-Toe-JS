@@ -1,7 +1,7 @@
-const { gameboard } = require('../main');
+const { gameBoard } = require('../gameboard');
 
 describe('gameboard', () => {
-	it('returns a null board whenever the resetboard is called'() => {
+  it('returns a null board whenever the resetboard is called', () => {
     expect(gameBoard.getBoard()).toEqual([null, null, null, null, null, null, null, null, null]);
   });
-}
+});

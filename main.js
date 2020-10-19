@@ -37,7 +37,6 @@ const gameBoard = (() => {
   };
 })();
 
-
 const logic = (() => {
   const winningCombinations = [
     [1, 2, 3],
@@ -136,7 +135,6 @@ const playerFactory = (playerName, playerSymbol) => {
   };
 };
 
-
 const game = (() => {
   const player1 = playerFactory('One', 'X');
   const player2 = playerFactory('Two', 'O');
@@ -171,7 +169,6 @@ const game = (() => {
 
     return false;
   };
-
 
   const stop = () => {
     boxes.forEach((box) => {
