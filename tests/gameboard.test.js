@@ -1,4 +1,4 @@
-const { gameBoard } = require('../gameboard');
+import { gameBoard } from '../gameboard';
 
 describe('gameboard', () => {
   it('returns a null board whenever the resetboard is called', () => {

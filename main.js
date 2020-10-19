@@ -1,41 +1,5 @@
-const Players = (e) => {
-  const playerOne = document.getElementById('player-one-input').value;
-  const playerTwo = document.getElementById('player-two-input').value;
-  const playersArray = [];
-  playersArray.push(playerOne);
-  playersArray.push(playerTwo);
-
-  if (playerOne && playerTwo) {
-    document.querySelector('.modal-players').classList.add('hide-players');
-    document.querySelector('.general-section').classList.remove('hide-section');
-    document.querySelector('.first-player-name').innerHTML = playerOne;
-    document.querySelector('.second-player-name').innerHTML = playerTwo;
-  }
-
-  e.preventDefault();
-
-  return false;
-};
-
-const gameBoard = (() => {
-  let board = new Array(9).fill(null);
-
-  const updateBoard = (index, symbol) => {
-    board[index] = symbol;
-  };
-
-  const getBoard = () => board;
-
-  const resetBoard = () => {
-    board = new Array(9).fill(null);
-  };
-
-  return {
-    updateBoard,
-    getBoard,
-    resetBoard,
-  };
-})();
+import { Players } from './players';
+import { gameBoard } from './gameboard';
 
 const logic = (() => {
   const winningCombinations = [
@@ -242,5 +206,3 @@ window.onload = () => {
     game.start();
   });
 };
-
-module.exports = { Players };
