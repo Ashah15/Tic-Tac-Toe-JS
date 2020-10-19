@@ -6,10 +6,10 @@ describe('gameboard', () => {
   });
 
   it('returns empty board when getBoard is called', () => {
-  	expect(gameBoard.getBoard()).toEqual([null, null, null, null, null, null, null, null, null]);
+    expect(gameBoard.getBoard()).toEqual([null, null, null, null, null, null, null, null, null]);
   });
 
   it('returns an updated board when updateBoard is called', () => {
-  	expect(gameBoard.updateBoard(5, 'x')).toEqual([null, null, null, null, null, 'x', null, null, null]);
+    expect(gameBoard.updateBoard(5, 'x')).toEqual([null, null, null, null, null, 'x', null, null, null]);
   });
 });
